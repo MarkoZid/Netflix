@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .product-image {
+    flex: 1;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .product-info h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+  }
+  
+  .product-info p {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+  
+  .product-info button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .bookmark-button {
+    background-color: #ff9900;
+  }
+  
+  .other-button {
+    background-color: #dc3545;
+  }
+  

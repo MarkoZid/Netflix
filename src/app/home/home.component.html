@@ -17,19 +17,15 @@
     </div>
     <section>
       <h2>Trending Now</h2>
-      <div class="card-list">
+      <div   class="card-list">
         <div class="card">
-          <img src="trending-1.jpg" alt="Trending Now 1">
+          <!-- {{i.name}} -->
+          <h1>{{componentData[1].name}}</h1>
+          
+          <button routerLink="details/{{componentData[1].id}}"> more </button>
+          <img src="{{componentData[1].img}}" alt="Trending Now 1">
         </div>
-        <div class="card">
-          <img src="trending-2.jpg" alt="Trending Now 2">
-        </div>
-        <div class="card">
-          <img src="trending-3.jpg" alt="Trending Now 3">
-        </div>
-        <div class="card">
-          <img src="trending-4.jpg" alt="Trending Now 4">
-        </div>
+        
       </div>
     </section>
     <section>
