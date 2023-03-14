@@ -8,6 +8,7 @@ import { AccountComponent } from './account/account.component';
 import { HomeComponent } from './home/home.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 import { DetailsComponent } from './details/details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DetailsComponent } from './details/details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

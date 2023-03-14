@@ -1,1 +1,30 @@
-<p>add-movie works!</p>
+<!-- <p>add-movie works!</p>
+
+<label for="favColor">Name: </label>
+<input id="name" type="text" [formControl]="favColor">
+<button (click) = 'test()'>BBB</button>
+<p>{{favColor.value}}</p>
+
+<button (click) = 'updateName()'>BBB</button> -->
+<!-- (ngSubmit)="onSubmit()" -->
+
+<form [formGroup]="favColor" >
+    <label for="firstName">First:</label>
+    <input id="firstName" type = 'text' 
+    formControlName = 'firstName'>
+    
+<br>
+    <label for="Last">Last:</label>
+    <input id="last" type = 'text' 
+    formControlName = 'lastName'>
+<br>
+    <label for="email">Email:</label>
+    <input id="email" type ="email"
+    formControlName = 'email'>
+
+
+
+    <button (click)="onSubmit(favColor.value)">xs</button>
+</form>
+
+

@@ -8,8 +8,8 @@
         <img src="user-photo.jpg" alt="User photo">
       </div>
       <div class="user-details">
-        <h1 class="username">John Doe</h1>
-        <p class="user-email">johndoe@example.com</p>
+        <h1 class="username">{{imee}} {{last}}</h1>
+        <p class="user-email">{{email}}</p>
       </div>
     </div>
     <div class="bookmarks">
@@ -22,8 +22,7 @@
         </li>
       </ul>
     </div>
+    <app-add-movie (data) ="dataFunkIme($event)"></app-add-movie>
   </main>
-  <footer>
-    <!-- Footer content here -->
-  </footer>
+  
 </body>
